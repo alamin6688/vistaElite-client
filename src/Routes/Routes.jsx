@@ -4,6 +4,7 @@ import Home from "../Pages/Home/Home";
 import SignUp from "../Pages/SignUp/SignUp";
 import Login from "../Pages/Login/Login";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
+import RoomDetails from "../Pages/RoomDetails/RoomDetails";
 
 export const router = createBrowserRouter([
   {
@@ -14,6 +15,10 @@ export const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+      },
+      {
+        path: "/room/:id",
+        element: <RoomDetails />,
       },
     ],
   },

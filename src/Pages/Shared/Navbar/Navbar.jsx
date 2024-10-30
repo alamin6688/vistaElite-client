@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import avatarImg from "../../../assets/images/placeholder.jpg";
 import useAuth from "../../../hooks/useAuth";
 import { IoLogoVimeo } from "react-icons/io";
+import Container from "../../../Components/Container/Container";
 
 const Navbar = () => {
   const { user, logOut } = useAuth();
@@ -12,7 +13,7 @@ const Navbar = () => {
   return (
     <div className="fixed w-full bg-white z-10 shadow-sm">
       <div className="p-4 border-b-[1px]">
-        {/* <Container> */}
+        <Container>
         <div className="flex flex-row  items-center justify-between gap-3 md:gap-0">
           {/* Logo */}
           <Link to="/" className="flex items-center justify-center gap-2">
@@ -96,7 +97,7 @@ const Navbar = () => {
             )}
           </div>
         </div>
-        {/* </Container> */}
+        </Container>
       </div>
     </div>
   );
