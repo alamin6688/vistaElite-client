@@ -32,7 +32,7 @@ const RoomDetails = () => {
         <title>{room?.title}</title>
       </Helmet>
       {room && (
-        <div className="max-w-screen-lg mx-auto pt-28">
+        <div className="pt-28">
           {/* Header */}
           <div className="flex flex-col gap-6">
             <div>
